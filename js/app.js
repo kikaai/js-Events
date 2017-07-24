@@ -7,14 +7,39 @@ The function will add the following content inside the paragraph with the id of 
 var bacon = "Shoulder turducken brisket, kevin swine andouille tri-tip salami tail ham sausage pork loin. Ribeye short loin rump kielbasa pork. Capicola short loin turducken corned beef tongue, chuck leberkas salami frankfurter. Kielbasa fatback pancetta, ground round meatball turducken jowl ribeye alcatra sirloin bacon corned beef beef ribs short loin. Pork belly spare ribs biltong corned beef meatball short ribs tongue alcatra swine drumstick. Biltong shankle kevin, cupim sirloin bresaola brisket. Tail pork belly biltong ball tip tri-tip, pig jerky cow pastrami prosciutto ;ground round bacon capicola tongue meatball.";
 
 
+// var pElem = getElementById("more");
+// pElem.addEventListener('click', moreContent);
+
+// // console.log(pElem);
+// function moreContent(){
+// var pElem = createElementById("p");
+// pElem.id = "more";
+// pElem.innerHTML = "Shoulder turducken brisket, kevin swine andouille tri-tip salami tail ham sausage pork loin. Ribeye short loin rump kielbasa pork. Capicola short loin turducken corned beef tongue, chuck leberkas salami frankfurter. Kielbasa fatback pancetta, ground round meatball turducken jowl ribeye alcatra sirloin bacon corned beef beef ribs short loin. Pork belly spare ribs biltong corned beef meatball short ribs tongue alcatra swine drumstick. Biltong shankle kevin, cupim sirloin bresaola brisket. Tail pork belly biltong ball tip tri-tip, pig jerky cow pastrami prosciutto ;ground round bacon capicola tongue meatball.";
+// document.body.appendChild(pElem);
+// }
+
 //2. HTTP
 /*Create a function named `lessContent` that will initiate the `Show Less` link after clicking on it.
 
 The function will hide the contents in the pargraph with the id of `less` after clicking on the `Show Less` link.*/
 
 
+ function lessContent() {
+    var x = document.getElementById('less');
+    if (x.style.display === 'none') {
+        x.style.display = 'block';
+    } else {
+        x.style.display = 'none';
+    }
+}
+
+
 //3. Tacocat, The Original Palindrome King
-/*Create a function named `zoom` that will increase the font size of the paragraph with the id of `biggie` after hovering your mouse over it. Increae the font size to 150%*/
+/*Create a function named `zoom` that will increase the font size of the paragraph with the id of `biggie` after hovering your mouse over it. Increase the font size to 150%*/
+
+document.getElementById("biggie").style.fontSize = "xx-large";
+
+
 
 
 //4. McDonalds
